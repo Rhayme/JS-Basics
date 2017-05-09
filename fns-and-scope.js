@@ -6,6 +6,14 @@ var name = 'Tyler';
 
   //Code Here
 
+function isTyler(name){
+    if(name === 'Tyler'){
+        return true;
+    }else{
+        return false;
+    }
+}
+
 //////////////////PROBLEM 2////////////////////
 
 
@@ -13,7 +21,10 @@ var name = 'Tyler';
 
 
   //Code Here
-
+function getName(){
+    var name = prompt('please enter your name');
+    return 'Your name is ' + name;
+}
 
 //////////////////PROBLEM 3////////////////////
 
@@ -23,7 +34,10 @@ var name = 'Tyler';
 //then alerts "Welcome, " plus whatever the users name is.
 
   //Code Here
-
+function welcome(){
+    var name = alert('welcome ' + getName());
+    return name;
+}
 
 //////////////////PROBLEM 4////////////////////
 
@@ -33,7 +47,7 @@ var name = 'Tyler';
 //What is the difference between arguments and parameters?
 
   //Answer Here
-
+//Parameters are initialize inside the parenthesis went you created the function, while arguments are what you pass when you call the function.
 
 //////////////////PROBLEM 5////////////////////
 
@@ -43,7 +57,8 @@ var name = 'Tyler';
 
 
   //Answer Here
-
+// the falsy values are: false, 0, null, undefined nan and empty string, and you check if they are falsy by testing if they are true or false in a
+//if statemant.
 
 
 //////////////////PROBLEM 6////////////////////
@@ -54,14 +69,16 @@ var name = 'Tyler';
 
   //Code Here
   
-
+function myName(){
+    return 'Ray';
+}
 
 //Now save the function definition of myName into a new variable called newMyName
 
   //Code Here
-
+var newMyName = myName();
 //Now alert the result of invoking newMyName
-
+alert(newMyName);
 
 
 //////////////////PROBLEM 7////////////////////
@@ -72,8 +89,16 @@ var name = 'Tyler';
 
   //Code Here
 
+function outerFn(){
+  var name =  function(){
+      return "Ray";
+
+    }
+    return name();
+}
 //Now save the result of invoking outerFn into a variable called innerFn.
-
+var innerFn = outerFn();
   //Code Here
-
+var innerFn = outerFn();
 //Now invoke innerFn.
+innerFn;
